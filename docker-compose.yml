@@ -1,16 +1,14 @@
-version: "3"
-
 services:
   database:
-    image: postgres:9.5-alpine
-    container_name: loja-virtual-spring-postgres-database
+    image: postgres
+    container_name: loja-virtual-database
     restart: always
     ports:
       - 5432:5432
     environment:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=admin
-      - POSTGRES_DB=dbloja
+      - POSTGRES_DB=lojadb
     volumes:
       - pgdata:/data/postgres
 

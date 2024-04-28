@@ -1,4 +1,4 @@
-package model;
+package tech.leondev.lojavirtual.lojavirtual.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
